@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/* Este é um CSS mínimo, apenas para legibilidade.
-  Ele NÃO cumpre nenhum requisito de design avançado.
-*/
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +9,6 @@ body {
     padding: 0;
 }
 
-/* Um contêiner simples para centralizar o conteúdo e limitar a largura */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -22,7 +17,6 @@ body {
     border: 1px solid #ddd;
 }
 
-/* Estrutura semântica básica */
 header, footer {
     text-align: center;
     padding: 10px 0;
@@ -31,7 +25,7 @@ header, footer {
 
 header h1 {
     margin: 0;
-    color: #D93D76; /* Única cor do projeto antigo */
+    color: #D93D76;
 }
 
 nav ul {
@@ -69,7 +63,6 @@ img {
     height: auto;
 }
 
-/* Estilos mínimos para o formulário */
 form div {
     margin-bottom: 15px;
 }
@@ -87,7 +80,7 @@ form input[type="date"],
 form input[type="password"] {
     width: 100%;
     padding: 8px;
-    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    box-sizing: border-box;
     border: 1px solid #ccc;
 }
 
