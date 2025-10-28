@@ -4,43 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Sociais - ONG Criança Feliz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>ONG Criança Feliz</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos Sociais</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+           <h1><a href="index.html">ONG Criança Feliz</a></h1>
+
+    <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            
+            <li class="menu-dropdown">
+                <a href="projetos.html">Projetos Sociais</a>
+                <ul class="submenu">
+                    <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
+                    <li><a href="projetos.html#doacao">Como Doar</a></li>
                 </ul>
-            </nav>
+            </li>
+            
+            <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
         </header>
 
         <main>
-            <h1>Projetos Sociais</h1>
-            
-            <section id="voluntariado">
-                <h2>Seja um Voluntário</h2>
-                <img src="imagens/imagem_voluntario.jpg" alt="Voluntários trabalhando juntos e sorrindo">
-                <p>Seu tempo e seu talento podem transformar vidas. Estamos sempre de portas abertas para pessoas que queiram ajudar em nossas oficinas, no reforço escolar ou em eventos.</p>
-                <p>Para fazer parte da nossa família de voluntários, por favor, <a href="cadastro.html">preencha nosso formulário de cadastro</a> e entraremos em contato.</p>
-            </section>
+        <h2>Nossos Projetos</h2>
+        <p style="text-align: center; margin-bottom: var(--espaco-l);">
+            Conheça em detalhes as iniciativas que transformam o dia a dia de nossas crianças e adolescentes.
+        </p>
 
-            <section id="doacao">
-                <h2>Como Doar</h2>
-                <img src="imagens/imagem_doar.jpg" alt="Caixa de doações com o símbolo de um coração">
-                <p>Nossa organização depende de doações para continuar oferecendo um ambiente seguro e rico em oportunidades para nossas crianças. Cada contribuição faz uma enorme diferença.</p>
-                <p>Você pode contribuir financeiramente através de depósito bancário ou PIX, ou doando materiais escolares, brinquedos e alimentos.</p>
-                <ul>
-                    <li><strong>Chave PIX (CNPJ):</strong> 00.000.000/0001-00</li>
-                    <li><strong>Banco Exemplo (001):</strong> Agência: 1234, Conta: 56789-0</li>
-                </ul>
-                <p>Para doações de materiais, <a href="cadastro.html">preencha o formulário</a> ou entre em contato conosco.</p>
-            </section>
-        </main>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+                <div class="card">
+                    <img class="card-imagem" src="imagens/projeto-reforco.jpg" alt="Crianças em atividade de reforço escolar">
+                    <div class="card-conteudo">
+                        <h3>Reforço Escolar</h3>
+                        <p>Oferecemos reforço escolar diário para crianças de 6 a 10 anos, ajudando com tarefas, leitura e matemática em um ambiente lúdico e seguro.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+                <div class="card">
+                    <img class="card-imagem" src="imagens/criança-pintando.jpeg" alt="Crianças pintando e desenhando">
+                    <div class="card-conteudo">
+                        <h3>Arte e Cultura</h3>
+                        <p>Nossas oficinas de pintura, música, dança e teatro são projetadas para desenvolver a criatividade, a expressão e a autoconfiança.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+                <div class="card">
+                    <img class="card-imagem" src="imagens/esporte.jpeg6" alt="Crianças jogando futebol">
+                    <div class="card-conteudo">
+                        <h3>Esporte e Lazer</h3>
+                        <p>Promovemos atividades esportivas diárias, incluindo futebol, vôlei e gincanas, ensinando sobre saúde, disciplina e trabalho em equipe.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <section id="voluntariado" class="cta-section">
+            <h3>Seja um Voluntário</h3>
+            <p>Seu tempo e seu talento podem transformar vidas. Faça parte da nossa família!</p>
+            <p><a href="cadastro.html" class="btn btn-primario">Quero ser voluntário</a></p>
+        </section>
+        
+        <section id="doacao" class="cta-section" style="margin-top: var(--espaco-l);">
+            <h3>Faça sua Doação</h3>
+            <p>Nossa organização depende de doações para continuar. Cada contribuição faz uma enorme diferença.</p>
+            <p><strong>Chave PIX (CNPJ):</strong> 00.000.000/0001-00</p>
+            <p><a href="cadastro.html" class="btn btn-secundario">Outras formas de doar</a></p>
+        </section>
+
+    </main>
 
         <footer>
             <div>
@@ -52,5 +97,6 @@
             <p>&copy; 2025 ONG Criança Feliz.</p>
         </footer>
     </div>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
