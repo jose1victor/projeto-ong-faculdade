@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ONG Criança Feliz</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.png" type="image/png"> 
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="imagens/favicon-removebg-preview.png" type="image/png"> 
 </head>
 <body>
     
     <header class="site-header">
         <h1><a href="index.html">ONG Criança Feliz</a></h1>
-        <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+
         <nav class="menu-principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="link-spa">Início</a></li>
                 <li class="menu-dropdown">
-                    <a href="projetos.html">Projetos Sociais</a>
-                    <ul class="submenu">
-                        <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
-                        <li><a href="projetos.html#doacao">Como Doar</a></li>
+                    <a href="projetos.html" class="dropdown-toggle link-spa" aria-haspopup="true" aria-expanded="false">Projetos Sociais</a>
+                    <ul class="submenu" role="menu">
+                        <li><a href="projetos.html#voluntariado" role="menuitem" class="link-spa">Seja Voluntário</a></li>
+                        <li><a href="projetos.html#doacao" role="menuitem" class="link-spa">Como Doar</a></li>
                     </ul>
                 </li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="cadastro.html" class="link-spa">Cadastro</a></li>
             </ul>
         </nav>
+
+        <div class="header-botoes-mobile">
+            <button class="botao-modo-escuro" aria-label="Alternar modo escuro">
+                🌙
+            </button>
+            <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
         <h2>Formulário de Cadastro</h2>
-
         <p style="text-align: center; margin-bottom: var(--espaco-l);"> 
             Preencha os campos abaixo para se cadastrar como voluntário ou doador.
         </p>
@@ -138,9 +145,9 @@
             <div class="footer-coluna">
                 <h3>Links Rápidos</h3>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos Sociais</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="index.html" class="link-spa">Início</a></li>
+                    <li><a href="projetos.html" class="link-spa">Projetos Sociais</a></li>
+                    <li><a href="cadastro.html" class="link-spa">Cadastro</a></li>
                 </ul>
             </div>
             <div class="footer-coluna">
@@ -155,6 +162,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="js/script.min.js" defer></script>
 </body>
 </html>

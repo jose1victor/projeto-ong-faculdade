@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Sociais - ONG Criança Feliz</title>
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="imagens/favicon-removebg-preview.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <header>
-           <h1><a href="index.html">ONG Criança Feliz</a></h1>
+    
+    <header class="site-header">
+        <h1><a href="index.html">ONG Criança Feliz</a></h1>
 
-    <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html" class="link-spa">Início</a></li>
+                <li class="menu-dropdown">
+                    <a href="projetos.html" class="dropdown-toggle link-spa" aria-haspopup="true" aria-expanded="false">Projetos Sociais</a>
+                    <ul class="submenu" role="menu">
+                        <li><a href="projetos.html#voluntariado" role="menuitem" class="link-spa">Seja Voluntário</a></li>
+                        <li><a href="projetos.html#doacao" role="menuitem" class="link-spa">Como Doar</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html" class="link-spa">Cadastro</a></li>
+            </ul>
+        </nav>
 
-    <nav class="menu-principal">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            
-            <li class="menu-dropdown">
-                <a href="projetos.html">Projetos Sociais</a>
-                <ul class="submenu">
-                    <li><a href="projetos.html#voluntariado">Seja Voluntário</a></li>
-                    <li><a href="projetos.html#doacao">Como Doar</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-    </nav>
-        </header>
+        <div class="header-botoes-mobile">
+            <button class="botao-modo-escuro" aria-label="Alternar modo escuro">
+                🌙
+            </button>
+            <button class="menu-hamburguer" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-        <main>
+    <main>
         <h2>Nossos Projetos</h2>
         <p style="text-align: center; margin-bottom: var(--espaco-l);">
             Conheça em detalhes as iniciativas que transformam o dia a dia de nossas crianças e adolescentes.
@@ -42,30 +47,33 @@
 
         <div class="row">
 
-            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+            <div class="col-lg-4 col-md-6">
                 <div class="card">
                     <img class="card-imagem" src="imagens/projeto-reforco.jpg" alt="Crianças em atividade de reforço escolar">
                     <div class="card-conteudo">
+                        <div class="tag tag-primaria">Educação</div>
                         <h3>Reforço Escolar</h3>
                         <p>Oferecemos reforço escolar diário para crianças de 6 a 10 anos, ajudando com tarefas, leitura e matemática em um ambiente lúdico e seguro.</p>
-                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+            <div class="col-lg-4 col-md-6">
                 <div class="card">
                     <img class="card-imagem" src="imagens/criança-pintando.jpeg" alt="Crianças pintando e desenhando">
                     <div class="card-conteudo">
+                        <div class="tag tag-secundaria">Arte & Cultura</div>
                         <h3>Arte e Cultura</h3>
                         <p>Nossas oficinas de pintura, música, dança e teatro são projetadas para desenvolver a criatividade, a expressão e a autoconfiança.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6" style="margin-bottom: var(--espaco-l);">
+            <div class="col-lg-4 col-md-6">
                 <div class="card">
                     <img class="card-imagem" src="imagens/esporte.jpeg" alt="Crianças jogando futebol">
                     <div class="card-conteudo">
+                        <div class="tag tag-acao">Esporte & Lazer</div>
                         <h3>Esporte e Lazer</h3>
                         <p>Promovemos atividades esportivas diárias, incluindo futebol, vôlei e gincanas, ensinando sobre saúde, disciplina e trabalho em equipe.</p>
                     </div>
@@ -75,28 +83,46 @@
         </div> <section id="voluntariado" class="cta-section">
             <h3>Seja um Voluntário</h3>
             <p>Seu tempo e seu talento podem transformar vidas. Faça parte da nossa família!</p>
-            <p><a href="cadastro.html" class="btn btn-primario">Quero ser voluntário</a></p>
+            <p><a href="cadastro.html" class="btn btn-primario link-spa">Quero ser voluntário</a></p>
         </section>
         
         <section id="doacao" class="cta-section" style="margin-top: var(--espaco-l);">
             <h3>Faça sua Doação</h3>
             <p>Nossa organização depende de doações para continuar. Cada contribuição faz uma enorme diferença.</p>
             <p><strong>Chave PIX (CNPJ):</strong> 00.000.000/0001-00</p>
-            <p><a href="cadastro.html" class="btn btn-secundario">Outras formas de doar</a></p>
+            <p><a href="cadastro.html" class="btn btn-secundario link-spa">Outras formas de doar</a></p>
         </section>
 
     </main>
 
-        <footer>
-            <div>
-                <h3>Informações de Contato</h3>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-coluna">
+                <h3>ONG Criança Feliz</h3>
                 <p>Endereço: Rua das Flores, 123 - Bairro: tala mansa</p>
                 <p>Telefone: (11) 1234-5678</p>
                 <p>Email: sdsf@gmail.com</p>
             </div>
+            <div class="footer-coluna">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html" class="link-spa">Início</a></li>
+                    <li><a href="projetos.html" class="link-spa">Projetos Sociais</a></li>
+                    <li><a href="cadastro.html" class="link-spa">Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="footer-coluna">
+                <h3>Siga-nos</h3>
+                <p>Fique por dentro das nossas novidades e atividades diárias.</p>
+                <div class="redes-sociais">
+                    </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
             <p>&copy; 2025 ONG Criança Feliz.</p>
-        </footer>
-    </div>
-    <script src="js/script.js" defer></script>
+        </div>
+    </footer>
+
+    <script src="js/script.min.js" defer></script>
 </body>
 </html>
